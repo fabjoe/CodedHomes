@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\CustomDatabaseInitializer.cs" />
+    <Compile Include="Configuration\HomeConfiguration.cs" />
+    <Compile Include="Configuration\UserConfiguration.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,5 +64,6 @@
       <Name>CodedHomes.Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

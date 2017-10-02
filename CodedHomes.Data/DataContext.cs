@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CodedHomes.Models;
 using System.Data.Entity;
 using System.Configuration;
+using CodedHomes.Data.Configuration;
 
 namespace CodedHomes.Data
 {
@@ -25,6 +26,17 @@ namespace CodedHomes.Data
         public DataContext() : base(nameOrConnectionString:DataContext.ConnectionString)
         {
 
+        }
+        static DataContext()
+        {
+            Database.SetInitializer(new CustomDatabaseInitializer());
+        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new HomeConfiguration());
+            modelBuilder.Configurations.Add(new UserConfiguration());
+
+            //base.OnModelCreating(modelBuilder);
         }
     }
 }
