@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodedHomes.Models
 {
-    public class Home
+    public class Home : IAuditInfo
     {
         public int Id { get; set; }
         public string StreetAddress { get; set; }
@@ -21,6 +21,5 @@ namespace CodedHomes.Models
         public string ImageName { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime ModifiedOn { get; set; }
-
     }
 }

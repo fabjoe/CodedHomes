@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedHomes.Models", "CodedH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedHomes.Data", "CodedHomes.Data\CodedHomes.Data.csproj", "{A9F8B205-569B-4238-B4D7-2D530C8242BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedHomes.ConsoleApp", "CodedHomes.ConsoleApp\CodedHomes.ConsoleApp.csproj", "{C1EF70B4-1437-4E36-8B18-185CE9B7CEBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A9F8B205-569B-4238-B4D7-2D530C8242BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9F8B205-569B-4238-B4D7-2D530C8242BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9F8B205-569B-4238-B4D7-2D530C8242BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1EF70B4-1437-4E36-8B18-185CE9B7CEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1EF70B4-1437-4E36-8B18-185CE9B7CEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1EF70B4-1437-4E36-8B18-185CE9B7CEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1EF70B4-1437-4E36-8B18-185CE9B7CEBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
