@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("styles", required: false)
+    <script>
+            window.onerror = function(errorText, url, lineNumber) {
+                var msg = 'errorText=' + errorText + '&url='
+                    + url + '&lineNumber=' + lineNumber;
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/api/error', true);
+                xhr.setRequestHeader("Content-type",
+                    "application/x-www-form-urlencoded");
+                xhr.send(msg);
+            };
+    </script>
+
+</head>
+<body class="container-fluid">
+    <header>
+        <div class="row-fluid">
+            <div class="span6"><a href="/"><img alt="CodedHomes" title="CodedHomes" src="~/img/coded-homes-logo-large.png"/></a></div>
+            <div class="span6">
+                @if (ViewBag.IncludeManifest != null)
+                {
+                    @Html.ActionLink("Manage Account", "manage", "account")
+                }
+                else
+                {
+                    @Html.Partial("_LoginPartial")
+                }
+            </div>
+        </div>
+    </header>
+    <article>
+        @RenderBody()
+    </article>
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    @RenderSection("breakout", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
