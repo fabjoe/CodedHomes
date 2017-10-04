@@ -48,11 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationUnit.cs" />
     <Compile Include="Configuration\CustomDatabaseInitializer.cs" />
     <Compile Include="Configuration\HomeConfiguration.cs" />
+    <Compile Include="Configuration\MembershipConfiguration.cs" />
+    <Compile Include="Configuration\OAuthMembershipConfiguration.cs" />
+    <Compile Include="Configuration\RoleConfiguration.cs" />
     <Compile Include="Configuration\UserConfiguration.cs" />
     <Compile Include="DataContext.cs" />
+    <Compile Include="GenericRepository.cs" />
+    <Compile Include="HomesRepository.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

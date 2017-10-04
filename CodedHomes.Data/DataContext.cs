@@ -36,6 +36,10 @@ namespace CodedHomes.Data
             modelBuilder.Configurations.Add(new HomeConfiguration());
             modelBuilder.Configurations.Add(new UserConfiguration());
 
+            modelBuilder.Configurations.Add(new RoleConfiguration());
+            modelBuilder.Configurations.Add(new OAuthMembershipConfiguration());
+            modelBuilder.Configurations.Add(new MembershipConfiguration());
+
             //base.OnModelCreating(modelBuilder);
         }
         private void ApplyRules()
